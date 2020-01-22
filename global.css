@@ -21,19 +21,38 @@
 		text-align: right;
 		position: absolute;
 		top: 20px;
-		line-height: 42pt;
+		line-height: 36pt;
 		vertical-align: middle;
-		width: calc(100% - 400px);
+		width: calc(100% - 365px);
 		right: 40px;
 		z-index: 999;
 	}
 
-	.item
+	#tmenu a 
 	{
+		transition: 0.4s;
+		font-size: 36pt;
+		color: rgba(70, 70, 70, 0.80);
+	}
+
+	#tmenu a:hover
+	{
+		line-height: 36pt;
+		color: rgba(70, 70, 70, 1.00);
+	}
+
+	#tmenu a:active
+	{
+		color: rgba(70, 70, 70, 1.00);
+	}
+
+	.mnitem
+	{
+		min-width: 80px;
 		font-family: Gilroy-ExtraBold, Gilroy-Regular, Gilroy, sans-serif;
 	}
 
-	/*#tmenu .item { vertical-align: middle; line-height: 42pt; }*/
+	/*#tmenu .item { vertical-align: middle; line-height: 36pt; }*/
 
 	.noselect
 	{
@@ -50,6 +69,7 @@
 	{
 		transition-duration: 0.4s;
 		-webkit-transition-duration: 0.4s;
+		vertical-align: text-bottom;
 		font-weight: 800;
 		letter-spacing: -0.07em;
 		font-family: Gilroy-ExtraBold, Gilroy-Regular, Gilroy, sans-serif;
@@ -120,12 +140,12 @@
 		-webkit-text-stroke-color: rgba(233, 233, 233, 1.00);
 	}
 	
-	#first { position: absolute; top: 20px; left: 28px; z-index: 2; font-size: 42pt; }
+	#first { position: absolute; top: 20px; left: 28px; z-index: 2; font-size: 36pt; }
 
 	#second 
 	{
 		cursor: pointer;
-		font-size: 42pt;
+		font-size: 36pt;
 		z-index: 3;
 		transition: opacity 0.7s; 
 		position: absolute; 
@@ -173,6 +193,13 @@
 		-webkit-transition-duration: 0.4s;
 		text-align: left;
 		padding: 35px;
+	}
+
+	#subcontainer p 
+	{
+/*		align: right;
+		max-width: calc(100% - 120px);
+*/
 	}
 
 	#foo
