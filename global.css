@@ -38,6 +38,9 @@
 
 	#tinylogo 
 	{
+		color: rgba(241, 242, 244, 1.00);
+		margin-right: 25px;
+		float: right;
 		cursor: default;
 		font-size: 28pt;
 	}
@@ -142,7 +145,7 @@
 		position: absolute;
 		top: 10px;
 		left: 0px;
-		border-top-right-radius: 100px;
+		border-top-right-radius: 80px;
 	}
 
 	#subcontainer
@@ -177,7 +180,7 @@
 
 	#footer
 	{
-		background-color: rgba(70, 70, 70, 1.00);
+		background-color: rgba(70, 70, 70, 0.98);
 		transition-duration: 0.4s;
 		-webkit-transition-duration: 0.4s;
 		text-align: left;
