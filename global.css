@@ -16,6 +16,25 @@
 		color: #464646;
 	}
 
+	#tmenu
+	{
+		text-align: right;
+		position: absolute;
+		top: 20px;
+		line-height: 42pt;
+		vertical-align: middle;
+		width: calc(100% - 400px);
+		right: 40px;
+		z-index: 999;
+	}
+
+	.item
+	{
+		font-family: Gilroy-ExtraBold, Gilroy-Regular, Gilroy, sans-serif;
+	}
+
+	/*#tmenu .item { vertical-align: middle; line-height: 42pt; }*/
+
 	.noselect
 	{
   -webkit-touch-callout: none; /* iOS Safari */
@@ -42,7 +61,7 @@
 		margin-right: 25px;
 		float: right;
 		cursor: default;
-		font-size: 28pt;
+		font-size: 24pt;
 	}
 
 	.wb
