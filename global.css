@@ -127,8 +127,9 @@
 	#tinylogo 
 	{
 		color: rgba(241, 242, 244, 1.00);
-		margin-right: 25px;
+		/*margin-right: 25px;*/
 		float: right;
+		text-align: right;
 		cursor: default;
 		bottom: 0.2em;
 		/*font-size: calc(24pt + 0.4vw);*/
@@ -236,6 +237,7 @@
 	
 	#container
 	{
+		transition: border-top-right-radius, 0.5s;
 		/*text-align: left;*/
 		background-color: rgba(241, 242, 244, 1.00);
 		color: rgba(70, 70, 70, 1.00);
@@ -244,7 +246,7 @@
 		position: absolute;
 		top: 10px;
 		left: 0px;
-		border-top-right-radius: 80px;
+		border-top-right-radius: 3em;
 	}
 
 	#subcontainer
@@ -476,10 +478,102 @@ input:checked + .slider:before {
    }
 }
 
-@media (min-width: 20em) {
+@media (max-width: 20em) {
 	#subcontainer
 	{
-		/*color: blue;*/
+		color: blue;
 		width: calc(100% - 8em);
 	}
+}
+
+/*gokulkrishh's media queries for all devices*/
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  /*//CSS*/
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  /*//CSS*/
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /*//CSS*/
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /*//CSS*/
+  #container 
+  {
+  	border-top-right-radius: 2em;
+  }
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  /*//CSS*/
+  #container 
+  {
+  	border-top-right-radius: 1.8em;
+  }
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  /*//CSS*/
+  #subcontainer 
+  {
+  	width: calc(100% - 7em);
+  }
+  #container 
+  {
+  	border-top-right-radius: 1.5em;
+  }
+  #footer
+  {
+  	font-size: smaller;
+  }
+  #tinylogo
+  {
+  	right: 0em;
+  }
+  
 }
