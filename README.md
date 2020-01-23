@@ -19,6 +19,12 @@ https://thomfg.github.io/unrealvoices-web/
 	letter-spacing: -0.07em;
 	font-family: Gilroy-ExtraBold;
 }
+
+b 
+{
+	letter-spacing: -0.05em;
+}
+
 .grad
 {
 	background-image: linear-gradient(to right, #DCAFC6 , #64519F);
