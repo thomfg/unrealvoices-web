@@ -8,7 +8,7 @@ https://thomfg.github.io/unrealvoices-web/
 `HTML:`
 
 ```html
-<div id="logo">unrea<b>l</b><span class="grad">voices &nbsp;</span></div>
+<div id="logo">unreal<span class="grad">voices &nbsp;</span></div>
 ```
 
 `CSS:`
@@ -18,11 +18,6 @@ https://thomfg.github.io/unrealvoices-web/
 }
 	letter-spacing: -0.07em;
 	font-family: Gilroy-ExtraBold;
-}
-
-b 
-{
-	letter-spacing: -0.05em;
 }
 
 .grad
