@@ -1,65 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Unreal Voices</title>
+	<title>Unreal Voices &mdash; HTML Framework</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="unreal.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+	<meta name="author" content="Thom Vaughan">
+	<meta charset="UTF-8">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" 
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+	crossorigin="anonymous">
+	</script>
 </head>
-<body>
 
+<body>
 <script type="text/javascript">
-	$(document).scroll(function() {
-	  var f = $(document).height() - $(window).height();
-	  var y = $(this).scrollTop();
-	  if (y > f-110) {
-	    $('.bottomMenu').slideDown(180);
-	  } else {
-	    $('.bottomMenu').slideUp(180);
-	  }
-	});
+$(document).scroll(function() 
+{
+	var f = $(document).height() - $(window).height();
+	var y = $(this).scrollTop();
+	if (y > f-110)
+	{
+		$('.bottomMenu').slideDown(180);
+	}
+	else
+	{
+		$('.bottomMenu').slideUp(180);
+	}
+});
 </script>
 
 <!-- The logo -->
 <span class="mainlogo">
 	<div id="first" class="notranslate">
-	<div class="noselect" id="logo">unrea<b>l</b><span class="grad">voices &nbsp;</span></div>
+		<div class="noselect" id="logo">
+			unrea<b>l</b><span class="grad">voices &nbsp;</span>
+		</div>
 	</div>
 
 	<div id="second" class="notranslate">
-	<div class="noselect" id="logo">unrea<b>l</b><span class="grad">voices &nbsp;</span></div>
+		<div class="noselect" id="logo">
+			unrea<b>l</b><span class="grad">voices &nbsp;</span>
+		</div>
 	</div>
 </span>
 
 <!-- Fancy rounded border -->
 <div id="sep" class="gradbg">
+	&nbsp;
 </div>
 
 <!-- Mobile Menu -->
 <div id="tmenu">
 	<p>
-	<a class="mnitem" href="#"><i style="letter-spacing: 0.5em; font-size: 32px" class="medium material-icons">fiber_new</i></a>
-	<a class="mnitem" href="#"><i style="letter-spacing: 0.5em; font-size: 32px" class="medium material-icons">record_voice_over</i></a>
-	<a class="mnitem" href="#"><i style="letter-spacing: 0.5em; font-size: 32px" class="medium material-icons">recent_actors</i></a>
-	<a class="mnitem" href="#"><i style="letter-spacing: 0.5em; font-size: 32px" class="medium material-icons">star</i></a>
-	<a class="mnitem" href="#"><i style="letter-spacing: 0.5em; font-size: 32px" class="medium material-icons">help</i></a>
-	<a class="mnitem" href="#"><i style="letter-spacing: 0.5em; font-size: 32px" class="medium material-icons">settings</i></a>
+		<a class="mnitem" href="#"><i style="letter-spacing: 0.5em; font-size: 32px" class="medium material-icons">fiber_new</i></a>
+		<a class="mnitem" href="#"><i style="letter-spacing: 0.5em; font-size: 32px" class="medium material-icons">record_voice_over</i></a>
+		<a class="mnitem" href="#"><i style="letter-spacing: 0.5em; font-size: 32px" class="medium material-icons">recent_actors</i></a>
+		<a class="mnitem" href="#"><i style="letter-spacing: 0.5em; font-size: 32px" class="medium material-icons">star</i></a>
+		<a class="mnitem" href="#"><i style="letter-spacing: 0.5em; font-size: 32px" class="medium material-icons">help</i></a>
+		<a class="mnitem" href="#"><i style="letter-spacing: 0.5em; font-size: 32px" class="medium material-icons">settings</i></a>
 	</p>
 </div>
 
 <!-- Desktop Menu -->
 <div id="desktopmenu">
 	<p>
-	<a class="mnitem" href="#">item1</a>
-	<a class="mnitem" href="#">item2</a>
-	<a class="mnitem" href="#">item3</a>
-	<a class="mnitem" href="#">item4</a>
-	<a class="mnitem" href="#">item5</a>
-	<a class="mnitem" href="#">item6</a>
+		<a class="mnitem" href="#">item1</a>
+		<a class="mnitem" href="#">item2</a>
+		<a class="mnitem" href="#">item3</a>
+		<a class="mnitem" href="#">item4</a>
+		<a class="mnitem" href="#">item5</a>
+		<a class="mnitem" href="#">item6</a>
 	</p>
 </div>
 
@@ -85,20 +97,20 @@
 
 		<!-- Default colour slider -->
 		<label class="switch">
-		  <input type="checkbox">
-		  <span class="slider round"></span>
+			<input type="checkbox">
+			<span class="slider round"></span>
 		</label>
 
 		<!-- Red slider -->
 		<label id="red" class="switch">
-		  <input type="checkbox">
-		  <span class="slider round"></span>
+			<input type="checkbox">
+			<span class="slider round"></span>
 		</label>
 
 		<!-- Green slider -->
 		<label id="grn" class="switch">
-		  <input type="checkbox">
-		  <span class="slider round"></span>
+			<input type="checkbox">
+			<span class="slider round"></span>
 		</label>
 		<br>
 
@@ -113,6 +125,7 @@
 		<!-- Red button -->
 		<button class="rouge">Cancel</button>
 
+		<!-- Bottom spacer, height is 8.5em -->
 		<div id="bottom-spacer">
 			&nbsp;
 		</div>
