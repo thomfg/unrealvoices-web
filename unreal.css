@@ -5,6 +5,57 @@
  \__,_|_| |_|_|  \___|\__,_|_| \_/ \___/|_|\___\___||___/  ## January 2020
 */
 
+:root /* Master Colour Values Here */
+{
+
+/* B/W Option 1 */
+/*
+	--unreal-blk: #464646;
+	--unreal-wht: #f1f2f4;
+*/
+/* B/W Option 2 */
+
+	--unreal-blk: #252525;
+	--unreal-wht: #e9e9e9;
+
+
+/* --gr1 is the lighter shade, --gr2 is darker shade */
+
+/* Gradient Option 1, Minty Blue */
+/*
+	--unreal-colour-gr1: #91eae5;
+	--unreal-colour-gr2: #56b3d1;
+*/
+/* Gradient Option 2, Hugh Orange */
+/*
+	--unreal-colour-gr1: #f1e072;
+	--unreal-colour-gr2: #fe9d5c;
+*/
+
+/* Gradient Option 3, "Green Beach" */
+/*
+	--unreal-colour-gr1: #00CDAC;
+	--unreal-colour-gr2: #02AAB0;
+
+*/
+/* Gradient Option 4, Thom Blue 1 */
+/*
+	--unreal-colour-gr1: #525c97;
+	--unreal-colour-gr2: #448cb6;
+
+*/
+/* Gradient Option 5, Thom Blue 2 */
+/*
+	--unreal-colour-gr1: #a3bded;
+	--unreal-colour-gr2: #6991c7;
+*/
+
+/* Gradient Option 6, Peach */
+
+	--unreal-colour-gr1: #ed6ea0;
+	--unreal-colour-gr2: #ec8c69;
+
+}
 
 @font-face {font-family: Gilroy-ExtraBold; src: url(Gilroy-ExtraBold.woff);}
 @font-face {font-family: Gilroy-Regular; src: url(Gilroy-Regular.woff);}
@@ -17,9 +68,9 @@
 body
 {
 	text-align: center;
-	background-color: rgba(241, 242, 244, 1.00);
+	background-color: var(--unreal-wht);
 	font-family: Gilroy-Regular, Gilroy, sans-serif;
-	color: #464646;
+	color: var(--unreal-blk);
 }
 
 /*Desktop Menu*/
@@ -40,19 +91,20 @@ body
 #desktopmenu a 
 {
 	transition: 0.4s;
-	color: rgba(70, 70, 70, 0.80);
+	color: var(--unreal-blk);
+	opacity: 0.8;
 	text-decoration: none;
 }
 
 #desktopmenu a:hover
 {
 	line-height: 36pt;
-	color: rgba(70, 70, 70, 1.00);
+	color: var(--unreal-blk);
 }
 
 #desktopmenu a:active
 {
-	color: rgba(70, 70, 70, 1.00);
+	color: var(--unreal-blk);
 }
 
 .mnitem
@@ -79,18 +131,20 @@ body
 #tmenu a 
 {
 	font-size: 36pt;
-	color: rgba(70, 70, 70, 0.80);
+	color: var(--unreal-blk);
+	opacity: 0.8;
 }
 
 #tmenu a:hover
 {
 	line-height: 36pt;
-	color: rgba(70, 70, 70, 1.00);
+	color: var(--unreal-blk);
+	opacity: 1.0;
 }
 
 #tmenu a:active
 {
-	color: rgba(70, 70, 70, 1.00);
+	color: var(--unreal-blk);
 }
 
 .mnitem
@@ -122,7 +176,7 @@ body
 
 #tinylogo 
 {
-	color: rgba(241, 242, 244, 1.00);
+	color: var(--unreal-wht);
 	float: right;
 	text-align: right;
 	cursor: default;
@@ -140,19 +194,19 @@ body
 
 .wb
 {
-	background-color: white;
+	background-color: var(--unreal-wht);
 	width: 6em;
 }
 
 .bb
 {
-	background-color: black;
+	background-color: var(--unreal-blk);
 	width: 6em;
 }
 
 .grad
 {
-	background-image: linear-gradient(to right, #DCAFC6 , #64519F);
+	background-image: linear-gradient(to right, var(--unreal-colour-gr1) , var(--unreal-colour-gr2));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	letter-spacing: -0.05em;
@@ -162,7 +216,7 @@ body
 {
 	font-size: 0.98em;
 	-webkit-text-stroke-width: 0.025em;
-	-webkit-text-stroke-color: rgba(70, 70, 70, 1.00);
+	-webkit-text-stroke-color: var(--unreal-blk);
 	letter-spacing: -0.05em;
 	-webkit-text-fill-color: transparent;
 }
@@ -171,14 +225,14 @@ body
 {
 	font-size: 0.98em;
 	-webkit-text-stroke-width: 0.025em;
-	-webkit-text-stroke-color: rgba(241, 242, 244, 1.00);
+	-webkit-text-stroke-color: var(--unreal-wht);
 	letter-spacing: -0.05em;
 	-webkit-text-fill-color: transparent;
 }
 
 .gradbg
 {
-	background-image: linear-gradient(230deg, #DCAFC6 , #64519F);
+	background-image: linear-gradient(230deg, var(--unreal-colour-gr1) , var(--unreal-colour-gr2));
 }
 
 .ol
@@ -186,7 +240,7 @@ body
 	font-size: 43pt;
 	letter-spacing: -0.079em;
 	-webkit-text-stroke-width: 0.02em;
-	-webkit-text-stroke-color: rgba(233, 233, 233, 1.00);
+	-webkit-text-stroke-color: var(--unreal-wht);
 }
 
 #first 
@@ -211,7 +265,7 @@ body
 
 #second .grad
 {
-	background-image: linear-gradient(to right, #64519F , #DCAFC6);
+	background-image: linear-gradient(to right, var(--unreal-colour-gr2) , var(--unreal-colour-gr1));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	letter-spacing: -0.05em;
@@ -222,8 +276,8 @@ body
 
 #sep
 {
-	background-color: rgba(241, 242, 244, 1.00);
-	color: rgba(241, 242, 244, 1.00);
+	background-color: var(--unreal-wht);
+	color: var(--unreal-wht);
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -234,8 +288,8 @@ body
 #container
 {
 	transition: border-top-right-radius, 0.5s;
-	background-color: rgba(241, 242, 244, 1.00);
-	color: rgba(70, 70, 70, 1.00);
+	background-color: var(--unreal-wht);
+	color: var(--unreal-blk);
 	width: 100%;
 	height: calc(100% - 10px);
 	position: absolute;
@@ -262,7 +316,7 @@ body
 	left: 0px;
 	width: 100%;
 	height: 4.9em;
-	color: #fff;
+	color: var(--unreal-wht);
 }
 #foo p 
 {
@@ -276,7 +330,8 @@ body
 
 #footer
 {
-	background-color: rgba(70, 70, 70, 0.98);
+	background-color: var(--unreal-blk);
+	opacity: 0.98;
 	transition-duration: 0.4s;
 	-webkit-transition-duration: 0.4s;
 	text-align: left;
@@ -286,7 +341,7 @@ body
 	left: 0px;
 	width: 100%;
 	height: 4.5em;
-	color: #fff;	
+	color: var(--unreal-wht);	
 }
 
 #footer p 
@@ -308,7 +363,7 @@ button
 	height: 2.4em;
 	/*background-color: #4CAF50; */
 	border: none;
-	color: white;
+	color: var(--unreal-wht);
 	padding: .2em 2.5em;
 	text-align: center;
 	text-decoration: none;
@@ -321,56 +376,55 @@ button
 
 .prp 
 {
-	background-image: linear-gradient(0deg, rgba(101, 81, 159, 0.70) , rgba(220, 175, 198, 0.70));
-
+	transition: 0.11s;
+	background-image: linear-gradient(to top, var(--unreal-colour-gr2) , var(--unreal-colour-gr1));
+	opacity: 0.7;
 }
 
 .rouge 
 {
 	background-image: linear-gradient(0deg, rgba(219, 114, 129, 0.70) , rgba(254, 99, 78, 0.70));
-
+	opacity: 0.7;
 }
 
 .greene
 {
 	background-image: linear-gradient(0deg, rgba(44, 193, 128, 0.70) , rgba(156, 212, 130, 0.70));
-
+	opacity: 0.7;
 }
 
 .prp:hover
 {
-	background-image: linear-gradient(0deg, rgba(101, 81, 159, 0.70) , rgba(220, 175, 198, 1.0));
-
+	opacity: 1;
 }
 
 .rouge:hover
 {
 	background-image: linear-gradient(0deg, rgba(219, 114, 129, 0.70) , rgba(254, 99, 78, 1.0));
-
+	opacity: 1;
 }
 
 .greene:hover
 {
 	background-image: linear-gradient(0deg, rgba(44, 193, 128, 0.70) , rgba(156, 212, 130, 1.0));
-
+	opacity: 1;
 }
 
 .prp:active
 {
-	background-image: linear-gradient(0deg, rgba(101, 81, 159, 1.0) , rgba(220, 175, 198, 1.0));
-
+	opacity: 0.9;
 }
 
 .rouge:active
 {
 	background-image: linear-gradient(0deg, rgba(219, 114, 129, 1.0) , rgba(254, 99, 78, 1.0));
-
+	opacity: 1;
 }
 
 .greene:active
 {
 	background-image: linear-gradient(0deg, rgba(44, 193, 128, 1.0) , rgba(156, 212, 130, 1.0));
-
+	opacity: 1;
 }
 
 /* W3C stuff */
@@ -423,7 +477,8 @@ button
 
 input:checked + .slider 
 {
-	background-image: linear-gradient(45deg, rgba(101, 81, 159, 0.70) , rgba(220, 175, 198, 0.70));
+	background-image: linear-gradient(45deg, var(--unreal-colour-gr2) , var(--unreal-colour-gr1));
+	opacity: 0.7;
 }
 
 #grn input:checked + .slider 
@@ -434,11 +489,12 @@ input:checked + .slider
 #red input:checked + .slider 
 {
 	background-image: linear-gradient(270deg, rgba(219, 114, 129, 0.60) , rgba(254, 99, 78, 0.60)) !important;
+	opacity: 0.6;
 }
 
 input:focus + .slider 
 {
-	box-shadow: 0 0 0px #64519F;
+	box-shadow: 0 0 0px var(--unreal-colour-gr2);
 }
 
 input:checked + .slider:before 
