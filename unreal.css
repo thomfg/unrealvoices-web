@@ -9,51 +9,49 @@
 {
 
 /* B/W Option 1 */
-/*
-	--unreal-blk: #464646;
-	--unreal-wht: #f1f2f4;
-*/
+
+	--unreal-blk1: #464646;
+	--unreal-wht1: #f1f2f4;
+
 /* B/W Option 2 */
 
 	--unreal-blk: #252525;
 	--unreal-wht: #e9e9e9;
 
-
-/* --gr1 is the lighter shade, --gr2 is darker shade */
+	--unreal-colour-grl: #91eae5;
+	--unreal-colour-grd: #56b3d1;
 
 /* Gradient Option 1, Minty Blue */
-/*
+
 	--unreal-colour-gr1: #91eae5;
 	--unreal-colour-gr2: #56b3d1;
-*/
+
 /* Gradient Option 2, Hugh Orange */
-/*
-	--unreal-colour-gr1: #f1e072;
-	--unreal-colour-gr2: #fe9d5c;
-*/
+
+	--unreal-colour-gr3: #f1e072;
+	--unreal-colour-gr4: #fe9d5c;
 
 /* Gradient Option 3, "Green Beach" */
-/*
-	--unreal-colour-gr1: #00CDAC;
-	--unreal-colour-gr2: #02AAB0;
 
-*/
-/* Gradient Option 4, Thom Blue 1 */
-/*
-	--unreal-colour-gr1: #525c97;
-	--unreal-colour-gr2: #448cb6;
+	--unreal-colour-gr5: #00CDAC;
+	--unreal-colour-gr6: #02AAB0;
 
-*/
-/* Gradient Option 5, Thom Blue 2 */
-/*
-	--unreal-colour-gr1: #a3bded;
-	--unreal-colour-gr2: #6991c7;
-*/
+/* Gradient Option 4, Rather Blue */
+
+	--unreal-colour-gr7: #525c97;
+	--unreal-colour-gr8: #448cb6;
+
+
+/* Gradient Option 5, A Bit of Blue */
+
+	--unreal-colour-gr9: #a3bded;
+	--unreal-colour-gr10: #6991c7;
+
 
 /* Gradient Option 6, Peach */
 
-	--unreal-colour-gr1: #ed6ea0;
-	--unreal-colour-gr2: #ec8c69;
+	--unreal-colour-gr11: #ed6ea0;
+	--unreal-colour-gr12: #ec8c69;
 
 }
 
@@ -206,7 +204,7 @@ body
 
 .grad
 {
-	background-image: linear-gradient(to right, var(--unreal-colour-gr1) , var(--unreal-colour-gr2));
+	background-image: linear-gradient(to right, var(--unreal-colour-grl) , var(--unreal-colour-grd));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	letter-spacing: -0.05em;
@@ -232,7 +230,7 @@ body
 
 .gradbg
 {
-	background-image: linear-gradient(230deg, var(--unreal-colour-gr1) , var(--unreal-colour-gr2));
+	background-image: linear-gradient(230deg, var(--unreal-colour-grl) , var(--unreal-colour-grd));
 }
 
 .ol
@@ -265,7 +263,7 @@ body
 
 #second .grad
 {
-	background-image: linear-gradient(to right, var(--unreal-colour-gr2) , var(--unreal-colour-gr1));
+	background-image: linear-gradient(to right, var(--unreal-colour-grd) , var(--unreal-colour-grl));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	letter-spacing: -0.05em;
@@ -374,10 +372,52 @@ button
 	-webkit-transition-duration: 0.4s;
 }
 
-.prp 
+.main
+{
+	transition: 0.11s;
+	background-image: linear-gradient(to top, var(--unreal-colour-grd) , var(--unreal-colour-grl));
+	opacity: 0.7;
+}
+
+.prp0
 {
 	transition: 0.11s;
 	background-image: linear-gradient(to top, var(--unreal-colour-gr2) , var(--unreal-colour-gr1));
+	opacity: 0.7;
+}
+
+.prp1 
+{
+	transition: 0.11s;
+	background-image: linear-gradient(to top, var(--unreal-colour-gr4) , var(--unreal-colour-gr3));
+	opacity: 0.7;
+}
+
+.prp2 
+{
+	transition: 0.11s;
+	background-image: linear-gradient(to top, var(--unreal-colour-gr6) , var(--unreal-colour-gr5));
+	opacity: 0.7;
+}
+
+.prp3 
+{
+	transition: 0.11s;
+	background-image: linear-gradient(to top, var(--unreal-colour-gr8) , var(--unreal-colour-gr7));
+	opacity: 0.7;
+}
+
+.prp4 
+{
+	transition: 0.11s;
+	background-image: linear-gradient(to top, var(--unreal-colour-gr10) , var(--unreal-colour-gr9));
+	opacity: 0.7;
+}
+
+.prp5 
+{
+	transition: 0.11s;
+	background-image: linear-gradient(to top, var(--unreal-colour-gr12) , var(--unreal-colour-gr11));
 	opacity: 0.7;
 }
 
@@ -477,7 +517,7 @@ button
 
 input:checked + .slider 
 {
-	background-image: linear-gradient(45deg, var(--unreal-colour-gr2) , var(--unreal-colour-gr1));
+	background-image: linear-gradient(45deg, var(--unreal-colour-grd) , var(--unreal-colour-grl));
 	opacity: 0.7;
 }
 
