@@ -38,6 +38,45 @@ $(document).scroll(function()
 });
 </script>
 
+<script type="text/javascript">
+	function mintyblue() {
+		document.documentElement.style
+			.setProperty('--unreal-colour-grl', "#91eae5");
+		document.documentElement.style
+			.setProperty('--unreal-colour-grd', "#56b3d1");
+	}
+	function hughorange() {
+		document.documentElement.style
+			.setProperty('--unreal-colour-grl', "#f1e072");
+		document.documentElement.style
+			.setProperty('--unreal-colour-grd', "#fe9d5c");
+	}
+	function greenbeach() {
+		document.documentElement.style
+			.setProperty('--unreal-colour-grl', "#00CDAC");
+		document.documentElement.style
+			.setProperty('--unreal-colour-grd', "#02AAB0");
+	}
+	function ratherblue() {
+		document.documentElement.style
+			.setProperty('--unreal-colour-grl', "#525c97");
+		document.documentElement.style
+			.setProperty('--unreal-colour-grd', "#448cb6");
+	}
+	function abitofblue() {
+		document.documentElement.style
+			.setProperty('--unreal-colour-grl', "#a3bded");
+		document.documentElement.style
+			.setProperty('--unreal-colour-grd', "#6991c7");
+	}
+	function peach() {
+		document.documentElement.style
+			.setProperty('--unreal-colour-grl', "#ed6ea0");
+		document.documentElement.style
+			.setProperty('--unreal-colour-grd', "#ec8c69");
+	}
+</script>
+
 <!-- The logo -->
 <span class="mainlogo">
 	<div id="first" class="notranslate">
@@ -124,13 +163,23 @@ $(document).scroll(function()
 		<p>Buttons:</p> 
 
 		<!-- Purple button -->
-		<button class="prp">Action</button>
+		<button class="main">Action</button>
 
 		<!-- Green button -->
 		<button class="greene">OK</button>
 
 		<!-- Red button -->
 		<button class="rouge">Cancel</button>
+
+		<!-- Change colourscheme buttons -->
+		<br>
+		<button onclick="mintyblue();" class="prp0">Minty Blue</button>
+		<button onclick="hughorange();" class="prp1">Hugh Orange</button>
+		<button onclick="greenbeach();" class="prp2">Green Beach</button>
+		<button onclick="ratherblue();" class="prp3">Rather Blue</button>
+		<button onclick="abitofblue();" class="prp4">A Bit of Blue</button>
+		<button onclick="peach();" class="prp5">Peach</button>
+
 
 		<!-- Bottom spacer, height is 8.5em -->
 		<div id="bottom-spacer">
